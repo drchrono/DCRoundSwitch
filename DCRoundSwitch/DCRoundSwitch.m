@@ -352,9 +352,6 @@
 	[self useLayerMasking];
 	[self positionLayersAndMask];
 
-	// retain all our targets so they don't disappear before the actions get sent at the end of the animation
-	[[self allTargets] makeObjectsPerformSelector:@selector(retain)];
-
 	[CATransaction setCompletionBlock:^{
 		[CATransaction begin];
 		if (!animated)
@@ -399,7 +396,6 @@
 			if (previousOn != on && !ignoreControlEvents)
 				[self sendActionsForControlEvents:UIControlEventValueChanged];
 
-			[[self allTargets] makeObjectsPerformSelector:@selector(release)];
 		}];
 
 		[CATransaction commit];
