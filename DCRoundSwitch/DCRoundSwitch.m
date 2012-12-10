@@ -352,8 +352,6 @@
 	[self useLayerMasking];
 	[self positionLayersAndMask];
 
-	// retain all our targets so they don't disappear before the actions get sent at the end of the animation
-
 	[CATransaction setCompletionBlock:^{
 		[CATransaction begin];
 		if (!animated)
