@@ -1,6 +1,8 @@
 DCRoundSwitch
 ============
 
+[![Join the chat at https://gitter.im/drchrono/DCRoundSwitch](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/drchrono/DCRoundSwitch?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Twitter: [@patr](http://twitter.com/patr)
 
 Our commercial apps: [domesticcat.com.au](http://domesticcat.com.au/apps)
